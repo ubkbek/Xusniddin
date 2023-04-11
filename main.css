@@ -1,0 +1,462 @@
+@font-face {
+  font-display: swap;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/work-sans-v18-latin-regular.woff2") format("woff2"),
+    url("./fonts/work-sans-v18-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/work-sans-v18-latin-500.woff2") format("woff2"),
+    url("./fonts/work-sans-v18-latin-500.woff") format("woff");
+}
+/* work-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/work-sans-v18-latin-600.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("./fonts/work-sans-v18-latin-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* work-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/work-sans-v18-latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("./fonts/work-sans-v18-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Work Sans";
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1592px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* HEADER */
+.header {
+  padding-top: 48px;
+  margin-bottom: 100px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: end;
+}
+
+.header__nav-list {
+  display: flex;
+}
+.header__nav-item + .header__nav-item {
+  margin-left: 63px;
+}
+
+.header__nav-link {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 23px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* hero */
+.hero {
+  color: #ffffff;
+  padding-bottom: 500px;
+  background-image: url("./images/hero-element1.png");
+  background-repeat: no-repeat;
+  background-position: 1200px 150px;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 973px;
+  width: 100%;
+}
+
+.hero__heading {
+  font-weight: 700;
+  font-size: 82px;
+  line-height: 100px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.hero__text {
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 654px;
+  width: 100%;
+}
+
+.hero__input-wrapper input {
+  min-width: 463px;
+  width: 100%;
+  padding: 24px 30px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ffffff;
+  outline: none;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.hero__input-wrapper img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transform: translate(450px, -55px);
+  padding: 5px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.wrapper {
+  background-image: url("./images/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 80px;
+  box-shadow: rgba(169, 24, 24, 0.25) 0px 20px 20px -12px;
+}
+
+/* features */
+.features {
+  margin-bottom: 140px;
+}
+
+.features__list {
+  display: flex;
+  justify-content: center;
+}
+
+.features__item {
+  display: flex;
+  align-items: center;
+}
+
+.features__item + .features__item {
+  margin-left: 228px;
+}
+
+.features__wrapper {
+  margin-left: 21px;
+}
+
+.features__heading {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  color: #081323;
+  margin-bottom: 0px;
+}
+
+.features__text {
+  font-weight: 500;
+  font-size: 17.1083px;
+  line-height: 20px;
+  color: #828282;
+}
+
+/* most products */
+.most-products {
+  margin-bottom: 146px;
+}
+
+.heading {
+  max-width: 485px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 75.6332px;
+  line-height: 89px;
+  color: #081323;
+  margin-bottom: 30px;
+}
+
+.most-products a {
+  display: inline-block;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 25.9314px;
+  line-height: 30px;
+  color: #4f4f4f;
+}
+
+.most-products img {
+  margin-left: 10px;
+}
+
+/* products */
+
+.products__container {
+  margin-bottom: 120px;
+}
+
+.products__list {
+  display: flex;
+  justify-content: center;
+  font-size: 22.6059px;
+  line-height: 100%;
+  /* identical to box height, or 23px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.05em;
+
+  color: #000000;
+}
+
+.products__list img {
+  border-radius: 26px 26px 0 0;
+}
+
+.products__item + .products__item {
+  margin-left: 26px;
+  max-width: 362px;
+  width: 100%;
+  min-height: 362px;
+  border-radius: 26px;
+  background-color: #cccccc80;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.products__wrapper p {
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.products__wrapper {
+  padding-top: 10px;
+  background-color: #ccc;
+  padding: 20px;
+  padding-bottom: 100px;
+  border-radius: 10px;
+}
+
+.products__wrapper img {
+  border-radius: 0;
+}
+
+/* rooms */
+.rooms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.rooms__heading {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 75px;
+  color: #081323;
+  margin-bottom: 52px;
+}
+
+.rooms ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.room__large {
+  width: 700px;
+  height: 615px;
+  background-image: url("./images/filter.png"), url("./images/large1.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 75px;
+  /* identical to box height */
+
+  color: #ffffff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.room__small {
+  width: 430px;
+  height: 615px;
+  background-image: url("./images/small1.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+}
+
+.rooms li {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+/* ready */
+.ready {
+  background-color: #262626;
+  padding: 109px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 246px;
+}
+
+.ready h2 {
+  font-weight: 600;
+  font-size: 62.8293px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 87px;
+}
+
+.ready span {
+  color: #dcb47a;
+}
+
+.ready a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+  background: #dcb47a;
+  border-radius: 60px;
+  padding: 20px 50px;
+}
+
+.ready__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer */
+.footer {
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__form {
+}
+
+.footer__input {
+  border: 1px solid #878787;
+  border-radius: 50px;
+  font-size: 20px;
+  line-height: 23px;
+  color: #878787;
+  padding: 24px 30px;
+  outline: none;
+  min-width: 463px;
+}
+
+.footer__btn {
+  background: #dcb47a;
+  border-radius: 50px;
+  padding: 12px 24px;
+  border: none;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  transform: translate(320px, -60px);
+}
+
+.footer__list {
+  display: flex;
+}
+
+.footer__item + .footer__item {
+  margin-left: 60px;
+}
+
+.footer h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  /* identical to box height, or 34px */
+  margin-bottom: 34px;
+  color: #000000;
+}
+
+.footer p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  margin-bottom: 16px;
+  color: #000000;
+}
+
+.footer__copyright {
+  text-align: center;
+}
